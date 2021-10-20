@@ -78,7 +78,6 @@ function watchFiles() {
   browserSync.init({
     server: { baseDir: 'app/' },
     notify: false,
-    port: 5050
   });
 
   watch('app/*.html').on('change', browserSync.reload);
