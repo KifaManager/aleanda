@@ -185,7 +185,7 @@
       margin-right: 30px;
     }
     &-stock{
-      right: 75px;
+      right: 0;
     }
     &-list {
       li {
@@ -453,8 +453,18 @@
       width: 100%;
     }
   }
-  .product-stock {
-    right: 15px;
+  .product {
+    &-actions{
+      flex-wrap: wrap;
+      .gray-link {
+        max-width: 100%;
+        margin-right: 0;
+        margin-bottom: 15px;
+      }
+      .orange-link {
+        max-width: 100%;
+      }
+    }
   }
 }
 
@@ -715,9 +725,6 @@
 
 
   .product {
-    &-stock {
-      right: 0;
-    }
     &-actions{
       flex-direction: column;
       .gray-link{
@@ -1114,7 +1121,6 @@
     }
     &-stock {
       min-width: 44vw;
-      right: 10px;
     }
     &-actions {
       margin-top: 50px;
